@@ -14,17 +14,34 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Scrollbar */
+/* Custom gorgeous dark purple scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background: #050507;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e1b4b;
-  border-radius: 3px;
+  background: #2e1065;
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #312e81;
+  background: #4c1d95;
+}
+
+/* Subtle atmospheric lighting effects */
+.glow-spot {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, rgba(5, 5, 7, 0) 70%);
+}
+
+.glass-card {
+  background: rgba(13, 13, 18, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+}
+
+.glass-card:hover {
+  border-color: rgba(124, 58, 237, 0.35);
+  box-shadow: 0 0 30px -10px rgba(124, 58, 237, 0.2);
 }
